@@ -1,0 +1,205 @@
+@keyframes example {
+    50% {
+        background-color: red;
+    }
+    100% {
+        background-color: yellow;
+    }
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    background-image: url("XO.png");
+}
+
+td {
+    border: 2px solid #333;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 70px;
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    position: absolute;
+    left: 50%;
+    margin-left: -155px;
+    top: 55px;
+}
+
+table tr:first-child td {
+    border-top: 0;
+}
+
+table tr:last-child td {
+    border-bottom: 0;
+}
+
+table tr td:first-child {
+    border-left: 0;
+}
+
+table tr td:last-child {
+    border-right: 0;
+}
+
+.endgame {
+    display: none;
+    width: 200px;
+    top: 120px;
+    background-color: rgba(88, 255, 144, 0.8);
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-size: 2em;
+}
+
+.cell {
+    font-family: "Chiller", cursive;
+    border-radius: 10px;
+}
+
+.cell1,
+.cell2,
+.cell3 {
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 0 1px #333333;
+    border-top: 1px solid #dd0505;
+    border-bottom: 1px solid #fffb00;
+    border-left: 1px solid #dd0505;
+    border-right: 1px solid #fffb00;
+    cursor: pointer;
+    line-height: 100px;
+    font-size: 60px;
+}
+
+.cell4,
+.cell5,
+.cell6 {
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 0 1px #333333;
+    border-top: 1px solid #dd0505;
+    border-bottom: 1px solid #fffb00;
+    border-left: 1px solid #dd0505;
+    border-right: 1px solid #fffb00;
+    cursor: pointer;
+    line-height: 100px;
+    font-size: 60px;
+}
+
+.cell7,
+.cell8,
+.cell9 {
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 0 1px #333333;
+    border-top: 1px solid #dd0505;
+    border-bottom: 1px solid #fffb00;
+    border-left: 1px solid #dd0505;
+    border-right: 1px solid #fffb00;
+    cursor: pointer;
+    line-height: 100px;
+    font-size: 60px;
+}
+
+.cell1 {
+    background-color: lightblue;
+    margin: 2.5px;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+.cell2 {
+    background-color: rgb(14, 255, 118);
+    margin: 2.5px;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+.cell3 {
+    background-color: rgb(170, 230, 5);
+    margin: 2.5px;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+.cell4 {
+    background-color: rgb(149, 71, 194);
+    margin: 2.5px;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+.cell5 {
+    background-color: rgb(255, 58, 32);
+    margin: 2.5px;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+.cell6 {
+    background-color: lightblue;
+    margin: 2.5px;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+.cell7 {
+    background-color: rgb(211, 190, 0);
+    margin: 2.5px;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+.cell8 {
+    background-color: rgba(238, 0, 139, 0.932);
+    margin: 2.5px;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+.cell9 {
+    background-color: rgb(82, 133, 16);
+    margin: 2.5px;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+.game--status {
+    color: red;
+    font-family: "Ravie", cursive;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+.game--restart {
+    border-radius: 5px;
+    background: transparent;
+    font-family: "Algerian", cursive;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 1s;
+    position: absolute;
+    top: 80%;
+    right: 45%;
+}
+
+.game--restart:hover {
+    background-color: #4CAF50;
+    box-shadow: 0 6px 16px 0 rgba(81, 255, 110, 0.945), 0 10px 50px 0 rgb(124, 255, 107);
+}
